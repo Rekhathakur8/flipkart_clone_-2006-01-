@@ -1,0 +1,83 @@
+/* main_container having one single main div */
+.main_container {
+  max-width: 98.6%;
+  background-color: white;
+  margin: auto;
+  margin-top: 10px;
+  padding: 0.5rem 1rem 1.5rem;
+}
+
+/* sub main div of main container having multiple div inside  */
+.sub_main_container {
+  display: flex;
+  background-color: white;
+}
+
+/* category card  containing image and text about the category */
+.category_card {
+  width: calc(100% / 9);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* container containes img*/
+.image_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 550;
+  color: #333;
+  cursor: pointer;
+}
+
+/* setting the width of image to be responsive according to screen size */
+.image_container img {
+  height: 80px;
+  margin-bottom: 15px;
+}
+
+/* span tag contain title */
+span {
+  font-size: 1rem;
+}
+/* down key style */
+.icon {
+  font-size: 1rem;
+  margin-left: 0.4rem;
+}
+/* text hover animation on special container */
+.special:hover {
+  color: rgb(40, 116, 240);
+}
+
+.special .icon {
+  transition: transform 0.5s ease;
+}
+
+.special:hover .icon {
+  transform: rotate(180deg);
+}
+
+/* styling Fashion div containing all catagorys of fashion items */
+
+.Fashion_main {
+  position: absolute;
+  background-color: rgb(116, 69, 0);
+  margin-top: 20px;
+  left: 25%;
+}
+
+.not_visible {
+  display: none;
+}
+
+.electron_main {
+  position: absolute;
+  background-color: rgb(0, 89, 116);
+  margin-top: 20px;
+  left: 50%;
+}

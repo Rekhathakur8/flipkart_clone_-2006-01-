@@ -187,3 +187,79 @@ span {
 .fourth:hover .DropDownMain {
   display: block;
 }
+
+/* making responsive navigation bar at width 768-px
+ */
+
+.resMainDiv {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: min-content;
+  padding-top: 0.6rem;
+  background-color: white;
+  color: rgb(9, 9, 9);
+}
+.resSearch,
+.resAbove {
+  width: 95%;
+}
+
+.resAbove {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.resNavLi {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .mainDiv,
+  .NavLi,
+  .third,
+  .fourth,
+  .cartPara,
+  .dropDiv {
+    display: none;
+  }
+  .resMainDiv,
+  .resNavLi {
+    display: flex;
+  }
+
+  .resNavLi p {
+    margin-left: 0.5rem;
+  }
+  .resNavLi {
+    font-size: 1.3rem;
+    font-family: inter_regular, fallback-inter_regular, Arial;
+  }
+
+  .resMainDiv {
+    min-width: 100%;
+    font-size: 1rem;
+  }
+  .resAbove {
+    margin-bottom: 0.5rem;
+  }
+  .searchBox {
+    min-width: 100%;
+  }
+  .leftmenu {
+    font-size: 2rem;
+    color: rgb(9, 9, 9);
+    margin-right: 0.2rem;
+    padding: 0.1rem;
+  }
+  .logo {
+    margin-right: 4rem;
+  }
+
+  .user {
+    font-size: 1.4rem;
+    color: rgb(9, 9, 9);
+  }
+}

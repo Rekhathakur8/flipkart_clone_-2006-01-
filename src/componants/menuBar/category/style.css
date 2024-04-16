@@ -44,40 +44,39 @@
 span {
   font-size: 1rem;
 }
+
 /* down key style */
 .icon {
   font-size: 1rem;
   margin-left: 0.4rem;
 }
 /* text hover animation on special container */
-.special:hover {
+.category_card:hover .image_container {
   color: rgb(40, 116, 240);
 }
 
-.special .icon {
+.category_card .icon {
   transition: transform 0.5s ease;
 }
 
-.special:hover .icon {
+.category_card:hover .icon {
   transform: rotate(180deg);
 }
 
 /* styling Fashion div containing all catagorys of fashion items */
 
-.Fashion_main {
+.catagoryItem {
   position: absolute;
-  background-color: rgb(116, 69, 0);
-  margin-top: 20px;
-  left: 25%;
+  background-color: white;
+  box-shadow: 0 4px 16px 0 rgb(0 0 0/20%);
+  top: 29%;
+  padding: 1rem;
 }
 
-.not_visible {
-  display: none;
-}
-
-.electron_main {
-  position: absolute;
-  background-color: rgb(0, 89, 116);
-  margin-top: 20px;
-  left: 50%;
+.itemDiv {
+  font-size: 1.1rem;
+  font-family: inter_regular, fallback-inter_regular, Arial, sans-serif;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  cursor: pointer;
 }

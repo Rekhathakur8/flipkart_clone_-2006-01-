@@ -29,7 +29,7 @@ function CategoryCart({ imageSrc, categoryName, categoryItems, icon, id }) {
       <div className="image_container">
         <img src={imageSrc} alt="catImage" />
         <div>
-          <span classname="span_tag">{categoryName}</span>
+          <span className="span_tag">{categoryName}</span>
           {/* this icon will show if data that include the icon */}
           {icon && <FaChevronDown className="icon" />}
         </div>

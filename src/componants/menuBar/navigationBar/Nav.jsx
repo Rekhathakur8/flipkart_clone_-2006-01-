@@ -1,32 +1,37 @@
+// i,porting css file
 import style from "./Nav.module.css";
+
+// importing components
 import Menu from "./Menu";
 
 import Search from "./Search";
 import Logo from "./Logo";
-import Leftmenu from "./Leftmenu";
+import AnimatedLogBtn from "./AnimateLogBtn";
+
+// imorting useEffect hook
+import { useEffect } from "react";
+
+import { useState } from "react";
 
 function Nav() {
+  const [showDiv, setShowDiv] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      console.log(showDiv);
+      setShowDiv(false);
+    }, 5000);
+
+    return () => clearTimeout(timer);
+  });
+
   return (
     <>
       <div className={style.mainDiv}>
         <Logo></Logo>
         <Search></Search>
         <Menu></Menu>
-      </div>
-
-      {/* making responsive at width 768px */}
-
-      <div className={style.resMainDiv}>
-        <div className={style.resAbove}>
-          <Leftmenu></Leftmenu>
-
-          <Logo></Logo>
-
-          <Menu></Menu>
-        </div>
-        <div className={style.resSearch}>
-          <Search></Search>
-        </div>
+        {showDiv && <AnimatedLogBtn></AnimatedLogBtn>}
       </div>
     </>
   );

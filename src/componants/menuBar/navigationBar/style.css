@@ -1,0 +1,106 @@
+.menuItem {
+  width: calc(100% / 4);
+  text-align: center;
+}
+
+.submenuItem {
+  width: 90%;
+}
+
+.submenuItem .arrowIcon {
+  transition: transform 0.5s ease;
+}
+.submenuItem:hover .arrowIcon {
+  transform: rotate(180deg);
+}
+
+.spec:hover {
+  background-color: aqua;
+}
+.user_icon {
+  font-size: 25px;
+}
+.name {
+  font-size: 20px;
+  margin-left: 12px;
+}
+
+.spec {
+  margin-left: 10px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  padding: 5px;
+}
+
+.Login {
+  width: 150px;
+}
+.Login:hover {
+  background-color: rgb(27, 77, 241);
+  color: white;
+}
+.arrow {
+  margin-left: 5px;
+}
+.threedot {
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.threedot:hover {
+  background-color: aliceblue;
+  border: 1px solid rgb(185, 184, 184);
+}
+
+/* styling animated login btn */
+
+.animated_btn {
+  position: absolute;
+  top: 9%;
+  left: 55%;
+  animation: shake 0.5s infinite;
+}
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* div present in bottom of arrow */
+.bottom_div {
+  background-color: rgb(67, 67, 224);
+  color: white;
+  width: 200px;
+  text-align: center;
+  padding: 1rem;
+}
+/* div present at top of the bottom div */
+
+.arrow-btn {
+  position: relative;
+  left: 90px;
+  width: 0;
+  height: 0;
+  border-bottom: 9px solid rgb(41, 64, 218);
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-top: 0px;
+}
